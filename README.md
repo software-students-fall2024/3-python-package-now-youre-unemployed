@@ -48,15 +48,25 @@ from datehelper import days_between, add_days, is_weekend, next_weekday
 
 1. **`next_weekday(given_date: date, weekday: int) -> date`**  
    Returns the next occurrence of a specified weekday from a given date. Weekdays are represented by integers where Monday is 0 and Sunday is 6.
+    ```python
+   print(next_weekday(date(2024, 11, 4), 3))
 
 2. **`days_between(date1: date, date2: date) -> int`**  
    Calculates the absolute number of days between two dates.
+    ```python
+   print(days_between(date(2023, 1, 1), date(2023, 1, 10)))
+
 
 3. **`add_days(start_date: date, days: int) -> date`**  
    Returns a new date that is a specified number of days after the given start date.
+    ```python
+   print(add_days(date(2023, 1, 1), 10))
 
 4. **`is_weekend(check_date: datetime) -> bool`**  
    Checks if a given date falls on a weekend (Saturday or Sunday).
+    ```python
+   print(is_weekend(datetime(2024, 11, 3)))
+
 
 **For a complete example, see [`example_date.py`](./example_date.py).**
 
