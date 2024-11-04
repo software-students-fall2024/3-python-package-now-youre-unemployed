@@ -22,4 +22,4 @@ def add_days(date, days):
      
 def is_weekend(date: datetime) -> bool:
     return date.weekday() >= 5
-
+ 
