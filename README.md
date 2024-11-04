@@ -1,8 +1,3 @@
-# Python Package Exercise
-
-An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
-
-
 # datehelper
 ![Event Logger Workflow](https://github.com/software-students-fall2024/3-python-package-now-youre-unemployed/actions/workflows/event-logger.yml/badge.svg)
 
