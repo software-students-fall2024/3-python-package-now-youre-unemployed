@@ -16,11 +16,14 @@ def test_next_weekday_already_that_day():
     # checks to skip to next week if it's already on the given weekday
     assert next_weekday(date(2024, 11, 6), 2) == date(2024, 11, 13), "Should be the next Wednesday in the following week, not the current one"
 
-def test_add_days():
-    initial_date = datetime.date(2023, 1, 1)
-    days_to_add = 10
-    new_date = add_days(initial_date, days_to_add)
-    assert new_date == datetime.date(2023, 1, 11), "add_days function failed"
+def test_add_days_basic():
+    assert add_days(date(2023, 1, 1), 10) == date(2023, 1, 11)
+
+def test_add_days_end_of_month():
+    assert add_days(date(2023, 1, 1), 30) == date(2023, 1, 31)
+
+def test_add_days_leap_year():
+    assert add_days(date(2023, 3, 1), 365) == date(2024, 2, 29)
 
 def test_days_between():
     assert days_between(date(2023, 1, 1), date(2023, 1, 10)) == 9
@@ -33,12 +36,12 @@ def test_days_between_reverse_order():
 
 def test_is_weekend_on_weekday():
     date = datetime(2024, 10, 30)
-    assert is_weekend(date) == False,
+    assert is_weekend(date) == False
     
 def test_is_weekend_on_saturday():
-    date = datetime(2024, 11, 2)
-    assert is_weekend(date) == True,
+    chosen_date = date(2024, 11, 2)
+    assert is_weekend(chosen_date) == True
     
 def test_is_weekend_on_sunday():
-    date = datetime(2024, 11, 3)
-    assert is_weekend(date) == True,
+    chosen_date = date(2024, 11, 3)
+    assert is_weekend(chosen_date) == True
