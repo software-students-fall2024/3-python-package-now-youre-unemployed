@@ -6,6 +6,9 @@ An exercise to create a Python package, build it, test it, distribute it, and us
 # datehelper
 ![Event Logger Workflow](https://github.com/software-students-fall2024/3-python-package-now-youre-unemployed/actions/workflows/event-logger.yml/badge.svg)
 
+# PyPI Link
+[PyPI Link](https://pypi.org/project/datehelper-now-youre-unemployed/0.1.6/)
+
 **A Python utility package for date manipulation**
 
 ---
@@ -88,7 +91,7 @@ git clone datehelper repository
 cd local/path/to/datehelper
 ```
 
-3. Thirdly install pipenv if you have not already using and then activate the virtual environment: 
+3. Thirdly install pipenv, if you have not already, and then activate the virtual environment: 
 
 ```bash
 pip install pipenv 
