@@ -27,7 +27,7 @@ An exercise to create a Python package, build it, test it, distribute it, and us
 
 ## Installation
 
-`pip`:
+1. `pip`:
 
 ```bash
 
@@ -35,6 +35,13 @@ pip install datehelper
 
 ```
 
+2. Import the functions into your code:
+
+```bash
+
+from datehelper import days_between, add_days, is_weekend, next_weekday
+
+```
 ---
 
 ## Usage
@@ -45,13 +52,13 @@ pip install datehelper
 
 ## Function Details
 
-###days_between(date1, date2)
+### days_between(date1, date2)
 
-###add_days(date, days)
+### add_days(date, days)
 
-###is_weekend(date)
+### is_weekend(date)
 
-###next_weekday(date, weekday)
+### next_weekday(date, weekday)
 
 ---
 
