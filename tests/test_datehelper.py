@@ -30,3 +30,15 @@ def test_days_between_same_date():
 
 def test_days_between_reverse_order():
     assert days_between(date(2023, 1, 10), date(2023, 1, 1)) == 9
+
+def test_is_weekend_on_weekday():
+    date = datetime(2024, 10, 30)
+    assert is_weekend(date) == False,
+    
+def test_is_weekend_on_saturday():
+    date = datetime(2024, 11, 2)
+    assert is_weekend(date) == True,
+    
+def test_is_weekend_on_sunday():
+    date = datetime(2024, 11, 3)
+    assert is_weekend(date) == True,

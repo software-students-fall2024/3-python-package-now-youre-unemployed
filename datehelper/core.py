@@ -1,4 +1,4 @@
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 def next_weekday(given_date, weekday):
     # day of the week for the given_date, where Mon is 0 and Sun is 6
@@ -19,4 +19,7 @@ def days_between(date1, date2):
 
 def add_days(date, days):
      return date + timedelta(days=days)
+     
+def is_weekend(date: datetime) -> bool:
+    return date.weekday() >= 5
 
