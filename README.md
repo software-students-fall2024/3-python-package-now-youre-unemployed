@@ -37,9 +37,21 @@ pip install datehelper
 
 ---
 
-## Usage
+## Usage Examples
 
-`insert usage photo here`
+1. **`next_weekday(given_date: date, weekday: int) -> date`**  
+   Returns the next occurrence of a specified weekday from a given date. Weekdays are represented by integers where Monday is 0 and Sunday is 6.
+
+2. **`days_between(date1: date, date2: date) -> int`**  
+   Calculates the absolute number of days between two dates.
+
+3. **`add_days(start_date: date, days: int) -> date`**  
+   Returns a new date that is a specified number of days after the given start date.
+
+4. **`is_weekend(check_date: datetime) -> bool`**  
+   Checks if a given date falls on a weekend (Saturday or Sunday).
+
+**For a complete example, see [`example_date.py`](./example_date.py).**
 
 ---
 
@@ -55,3 +67,10 @@ pip install datehelper
 
 ---
 
+## Team Members
+
+- Shray Awasti - [Github Profile](https://github.com/shrayawasti)
+- Toshi Troyer - [Github Profile](https://github.com/toshiHTroyer)
+- Ethan Cheng - [Github Profile](https://github.com/ethanhcheng)
+- Joseph Hwang - [Github Profile](https://github.com/josephnyu)
+---
