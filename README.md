@@ -62,7 +62,7 @@ from datehelper import days_between, add_days, is_weekend, next_weekday
     ```python
    print(add_days(date(2023, 1, 1), 10))
 
-4. **`is_weekend(check_date: datetime) -> bool`**  
+4. **`is_weekend(check_date: datetime) -> bool`** 
    Checks if a given date falls on a weekend (Saturday or Sunday).
     ```python
    print(is_weekend(datetime(2024, 11, 3)))
@@ -72,16 +72,52 @@ from datehelper import days_between, add_days, is_weekend, next_weekday
 
 ---
 
-## Function Details
+## Setup
 
-### days_between(date1, date2)
+1. Clone the Repository
 
-### add_days(date, days)
+First, clone the repository to your local machine:
 
-### is_weekend(date)
+```bash
+git clone datehelper repository 
+```
 
-### next_weekday(date, weekday)
+2. Next cd into where the repository folder is located on your local machine:
 
+```bash
+cd local/path/to/datehelper
+```
+
+3. Thirdly install pipenv if you have not already using and then activate the virtual environment: 
+
+```bash
+pip install pipenv 
+pipenv shell
+```
+
+4. Install the dependencies 
+
+```bash
+pipenv install --dev
+```
+
+5. Build the package
+
+```bash
+python -m build
+```
+
+6. If you have already built the package make sure to clean it: 
+
+```bash
+rm -rf dist src/*.egg-info
+```
+
+7. To run tests: 
+
+```bash
+pipenv run pytest
+```
 ---
 
 ## Team Members
